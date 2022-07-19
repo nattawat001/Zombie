@@ -17,7 +17,7 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position,Player.transform.position)<1.5f)
+        if(Vector3.Distance(transform.position,Player.transform.position)<2.5f)
         {
             agen.speed = 0;
         }
