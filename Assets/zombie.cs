@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-
-public class Zombie : MonoBehaviour
+public class zombie : MonoBehaviour
 {
     NavMeshAgent agen;
     GameObject Player;
@@ -19,7 +18,8 @@ public class Zombie : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {   Float dist = Vector3.Distance(transform.position,Player.transform.position);
+    {
+         float dist = Vector3.Distance(transform.position,Player.transform.position);
         anim.SetFloat("distance",dist);
         if(Vector3.Distance(transform.position,Player.transform.position)<2.5f)
         {

@@ -19,7 +19,7 @@ public class Zombie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Float dist = Vector3.Distance(transform.position, player.transform.position);
+        float dist = Vector3.Distance(transform.position, player.transform.position);
         anim.SetFloat("distance", dist);
         if (dist < 2.5f) agent.speed = 0;
         else agent.SetDestination(player.transform.position);
